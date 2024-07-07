@@ -1,3 +1,7 @@
+import AdminProvider from "@/Context/AdminProvider";
+import CartProvider from "@/Context/CartProvider";
+import ContextProvider from "@/Context/Context";
+import { ProductContextProvider } from "@/Context/CreateProduct";
 import { Roboto } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
@@ -14,18 +18,18 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={inter.className}>
 				{/* <NextTopLoader color="#000" height={4} /> */}
-				{/* <ContextProvider>
+				<ContextProvider>
 					<AdminProvider>
 						<ProductContextProvider>
-							<CartProvider> */}
-				{/* <Header /> */}
-				<Toaster />
-				{children}
-				{/* <Footer /> */}
-				{/* </CartProvider>
+							<CartProvider>
+								{/* <Header /> */}
+								<Toaster />
+								{children}
+								{/* <Footer /> */}
+							</CartProvider>
 						</ProductContextProvider>
 					</AdminProvider>
-				</ContextProvider> */}
+				</ContextProvider>
 			</body>
 		</html>
 	);

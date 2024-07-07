@@ -10,7 +10,6 @@ const EmblaCarousel = (props) => {
 	const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
 
 	const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } = usePrevNextButtons(emblaApi);
-	console.log({ slides });
 	return (
 		<div className="embla">
 			<div className="embla__viewport" ref={emblaRef}>
