@@ -75,7 +75,7 @@ const HeroBanner = () => {
 										</li>
 										<li>
 											<a
-												href="https://wa.me/6369023228?send=hello"
+												href="https://wa.me/9952480651"
 												target="_blank"
 												className="text-gray-700 transition hover:opacity-75"
 											>
